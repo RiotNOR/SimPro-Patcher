@@ -1,0 +1,26 @@
+SimPro Patcher GUI - Build Instructions
+=========================================
+
+To build the GUI version as a standalone executable without console window:
+
+Method 1 - Using the provided spec file (recommended):
+-------------------------------------------------------
+pyinstaller build_gui.spec
+
+Method 2 - Command line (alternative):
+--------------------------------------
+pyinstaller --onefile --noconsole --name SimProPatcher patch_simpro_gui.py
+
+The executable will be created in the 'dist' folder.
+
+Notes:
+------
+- The --noconsole flag prevents the command window from appearing
+- The GUI uses message boxes for all user feedback instead of console output
+- A backup (.bak) file is automatically created when patching
+- The GUI is optimized for standalone exe distribution
+
+Requirements:
+-------------
+- Python with tkinter (usually included)
+- PyInstaller: pip install pyinstaller

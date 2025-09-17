@@ -31,6 +31,9 @@ MANIFEST
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
+# Default Github python gitignore, so meh -- keep our custom PyInstaller spec files
+!SimProPatcher.spec
+!build_gui.spec
 
 # Installer logs
 pip-log.txt
